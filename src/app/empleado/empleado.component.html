@@ -1,0 +1,16 @@
+<div>
+    <h3>Datos del empleado:</h3>
+    <p>Nombre: {{nombre}}</p>
+    <p>Apellido: {{apellido}}</p>
+    <p>Edad: {{edad}}</p>
+    <!-- Esto se podria hacer -->
+    <!-- <p>Edad: {{edad + 10}}</p> -->
+    <!-- <p>Edad: {{edad<18 ? 'Menor de edad' : 'Mayor de edad'}}</p> -->
+    <!-- Para utilizar metodos getters -->
+    <!-- <p>Edad: {{getEdad()}}</p> -->
+    <p>Empresa: {{empresa.value}}</p>
+
+    Introduce la empresa: <input type="text" #empresa (keyup)="0"><br><br>
+
+    <!-- <input type="button" value="Cambiar texto" (click)="llamaEmpresa(empresa.value)"/> -->
+</div>
